@@ -1,0 +1,87 @@
+
+#slider .caption p {
+  margin: 0;
+}
+
+a.app_store_btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 40px;
+  border: 2px solid #525252;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 20px 20px 10px 0;
+
+  color: #525252;
+  font-family: "open_semibold", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    border-color: #41c27d;
+    color: #41c27d !important;
+  }
+
+  &:hover .play_icon {
+    background-position: -14px -32px;
+  }
+
+  &:hover .iphone_icon {
+    background-position: -14px -16px;
+  }
+
+  &:hover .android_icon {
+    background-position: -14px 0;
+  }
+}
+
+.play_icon,
+.android_icon,
+.iphone_icon {
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-bottom: 3px;
+  background-image: url("../img/icons_with_hover.png");
+  background-repeat: no-repeat;
+}
+
+.play_icon {
+  background-position: 0 -32px;
+}
+
+.iphone_icon {
+  background-position: 0 -16px;
+}
+
+.android_icon {
+  background-position: 0 0;
+}
+
+a.app_link {
+  text-transform: lowercase;
+  letter-spacing: .5px;
+  color: #636363;
+  font-family: "open_regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #41c27d !important;
+  }
+}
+
+a.app_store_btn,
+.play_icon,
+.iphone_icon,
+.android_icon,
+a.app_link {
+  transition: all .2s linear, background-position 0;
+  -o-transition: all .2s linear, background-position 0;
+  -moz-transition: all .2s linear, background-position 0;
+  -webkit-transition: all .2s linear, background-position 0;
+}

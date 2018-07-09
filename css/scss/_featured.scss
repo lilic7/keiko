@@ -1,0 +1,36 @@
+/*		Featured on section 		*/
+
+.featured_on {
+  width: 100%;
+  padding: 25px 0;
+  background: #f3f3f3;
+
+  & ul {
+    margin: 0;
+  }
+}
+
+.logos_big {
+  position: relative;
+  width: 132px;
+  height: 45px;
+  background-image: url("../img/logos_big.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  &.facebook {
+    background-position-y: -45px;
+  }
+
+  &.yahoo {
+    background-position-y: -90px;
+  }
+
+  &.paypal {
+    background-position-y: -135px;
+  }
+}
+
+.featured_on li:first-child {
+  margin-left: 0;
+}

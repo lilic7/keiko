@@ -1,0 +1,27 @@
+/*		Footer 		*/
+
+footer {
+  padding: 100px 0;
+  text-align: center;
+  & .app_platform li {
+    margin: 0 0 0 60px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  & .copyright {
+    margin-top: 60px;
+    color: #757171;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .5px;
+
+    & a {
+      color: #565555;
+    }
+  }
+}
+
+
