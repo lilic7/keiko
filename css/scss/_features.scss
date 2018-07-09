@@ -27,6 +27,34 @@
 
   & .details {
     margin-bottom: 80px;
+
+    & .icon {
+      width: 36px;
+      height: 32px;
+      display: block;
+      margin: 0 auto;
+      background: url("../img/app_features.png") no-repeat;
+
+      &.icon_1{
+        background-position: 0 0;
+      }
+      &.icon_2{
+        background-position: 0 -32px;
+      }
+      &.icon_3{
+        background-position: 0 -64px;
+      }
+      &.icon_4{
+        background-position: 0 -96px;
+      }
+      &.icon_5{
+        background-position: 0 -128px;
+      }
+      &.icon_6{
+        background-position: 0 -160px;
+      }
+    }
+
     &:nth-child(3n+1) {
       clear: both;
     }

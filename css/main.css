@@ -258,26 +258,26 @@ a.app_link {
         font-family: "open_semibold", Helvetica, Arial, sans-serif;
         font-size: 16px;
         line-height: 44px;
-        text-indent: 25px;
         transition: all .2s linear;
         -o-transition: all .2s linear;
         -moz-transition: all .2s linear;
         -webkit-transition: all .2s linear; }
-        .about .features_list ul li.camera_icon {
-          background: url("../img/icon1.png") no-repeat;
-          background-position: 0 15px; }
-        .about .features_list ul li.video_icon {
-          background: url("../img/icon2.png") no-repeat;
-          background-position: 0 15px; }
-        .about .features_list ul li.eye_icon {
-          background: url("../img/icon3.png") no-repeat;
-          background-position: 0 14px; }
-        .about .features_list ul li.pic_icon {
-          background: url("../img/icon4.png") no-repeat;
-          background-position: 0 14px; }
-        .about .features_list ul li.loc_icon {
-          background: url("../img/icon5.png") no-repeat;
-          background-position: 3px 13px; }
+        .about .features_list ul li span.icon {
+          width: 22px;
+          height: 20px;
+          background-image: url("../img/about_icons.png");
+          background-repeat: no-repeat;
+          margin-right: 22px; }
+          .about .features_list ul li span.icon.camera_icon {
+            background-position: 0 0; }
+          .about .features_list ul li span.icon.video_icon {
+            background-position: 0 -20px; }
+          .about .features_list ul li span.icon.eye_icon {
+            background-position: 0 -40px; }
+          .about .features_list ul li span.icon.pic_icon {
+            background-position: 0 -60px; }
+          .about .features_list ul li span.icon.loc_icon {
+            background-position: 0 -80px; }
         .about .features_list ul li span {
           display: inline-block; }
 
@@ -351,22 +351,21 @@ a.app_link {
       background: url("../img/nav_arrow.png") no-repeat;
       text-indent: -200px;
       overflow: hidden;
-      transition: all .2s linear;
-      -o-transition: all .2s linear;
-      -moz-transition: all .2s linear;
-      -webkit-transition: all .2s linear; }
+      transition: all .2s linear, background-position 0;
+      -o-transition: all .2s linear, background-position 0;
+      -moz-transition: all .2s linear, background-position 0;
+      -webkit-transition: all .2s linear, background-position 0; }
     #tslider .owl-controls .owl-prev {
       background-position: 0 0; }
       #tslider .owl-controls .owl-prev:hover {
-        background-position: 0 0; }
+        background-position: 0 -32px; }
     #tslider .owl-controls .owl-next {
-      background-position: -33px 0;
+      background-position: -32px 0;
       margin-left: 40px; }
       #tslider .owl-controls .owl-next:hover {
-        background-position: -33px 0; }
+        background-position: -32px -32px; }
     #tslider .owl-controls .owl-prev:hover, #tslider .owl-controls .owl-next:hover {
-      cursor: pointer;
-      background: url("../img/nav_arrow_hover.png") no-repeat; }
+      cursor: pointer; }
 
 /*		Featured on section 		*/
 .featured_on {
@@ -416,6 +415,24 @@ a.app_link {
     line-height: 28px; }
   .app_features .details {
     margin-bottom: 80px; }
+    .app_features .details .icon {
+      width: 36px;
+      height: 32px;
+      display: block;
+      margin: 0 auto;
+      background: url("../img/app_features.png") no-repeat; }
+      .app_features .details .icon.icon_1 {
+        background-position: 0 0; }
+      .app_features .details .icon.icon_2 {
+        background-position: 0 -32px; }
+      .app_features .details .icon.icon_3 {
+        background-position: 0 -64px; }
+      .app_features .details .icon.icon_4 {
+        background-position: 0 -96px; }
+      .app_features .details .icon.icon_5 {
+        background-position: 0 -128px; }
+      .app_features .details .icon.icon_6 {
+        background-position: 0 -160px; }
     .app_features .details:nth-child(3n+1) {
       clear: both; }
 
@@ -498,6 +515,17 @@ footer {
   text-align: center; }
   footer .app_platform li {
     margin: 0 0 0 60px; }
+    footer .app_platform li a span {
+      display: inline-block;
+      width: 40px;
+      height: 38px;
+      background: url("../img/footer_icons_big.png") no-repeat; }
+      footer .app_platform li a span.android {
+        background-position: 0 0; }
+      footer .app_platform li a span.ios {
+        background-position: 0 -38px; }
+      footer .app_platform li a span.windows {
+        background-position: 0 -76px; }
     footer .app_platform li:first-child {
       margin: 0; }
   footer .copyright {

@@ -46,37 +46,40 @@
         font-family: "open_semibold", Helvetica, Arial, sans-serif;
         font-size: 16px;
         line-height: 44px;
-        text-indent: 25px;
 
         transition: all .2s linear;
         -o-transition: all .2s linear;
         -moz-transition: all .2s linear;
         -webkit-transition: all .2s linear;
 
-        &.camera_icon {
-          background: url('../img/icon1.png') no-repeat;
-          background-position: 0 15px;
+        & span.icon{
+          width: 22px;
+          height: 20px;
+          background-image: url("../img/about_icons.png");
+          background-repeat: no-repeat;
+          margin-right: 22px;
+
+          &.camera_icon {
+            background-position: 0 0;
+          }
+
+          &.video_icon {
+            background-position: 0 -20px;
+          }
+
+          &.eye_icon {
+            background-position: 0 -40px;
+          }
+
+          &.pic_icon {
+            background-position: 0 -60px;
+          }
+
+          &.loc_icon {
+            background-position: 0 -80px;
+          }
         }
 
-        &.video_icon {
-          background: url('../img/icon2.png') no-repeat;
-          background-position: 0 15px;
-        }
-
-        &.eye_icon {
-          background: url('../img/icon3.png') no-repeat;
-          background-position: 0 14px;
-        }
-
-        &.pic_icon {
-          background: url('../img/icon4.png') no-repeat;
-          background-position: 0 14px;
-        }
-
-        &.loc_icon {
-          background: url('../img/icon5.png') no-repeat;
-          background-position: 3px 13px;
-        }
 
         & span {
           display: inline-block;
